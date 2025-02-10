@@ -66,6 +66,16 @@ public abstract class User {
         this.fullName = fullName;
     }
 
+    @Override
+    public String toString() {
+        return "User{" +
+               "userId=" + userId +
+               ", username='" + username + '\'' +
+               ", email='" + email + '\'' +
+               ", fullName='" + fullName + '\'' +
+               ", role='" + role + '\'' +
+               '}';
+    }
 
    
 }

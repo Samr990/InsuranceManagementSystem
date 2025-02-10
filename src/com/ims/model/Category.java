@@ -14,6 +14,12 @@ public class Category {
         this.categoryId = categoryId;
         this.categoryName = categoryName;
     }
+    
+    public Category(int categoryId, String categoryName, List<SubCategory> subList) {
+        this.categoryId = categoryId;
+        this.categoryName = categoryName;
+        this.subCategories = subList;
+    }
 
     // Getters & Setters
     public int getCategoryId() {

@@ -7,6 +7,11 @@ public class SubCategory {
     private String subCategoryName;
     private String description; // Short description of subcategory
     private Category parentCategory; // Reference to parent category
+    
+    public SubCategory(int subCategoryId, String subCategoryName ) {
+    	this.subCategoryId = subCategoryId;
+        this.subCategoryName = subCategoryName;
+    }
 
     // Constructor (Mandatory fields only)
     public SubCategory(int subCategoryId, String subCategoryName, Category parentCategory) {
